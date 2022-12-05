@@ -91,33 +91,7 @@ button:hover {
 span {
     margin: 0 5px 0 15px;
 }
-
-.main-btn {
-    background-color: #c8a35f;
-    border-radius: 10px;
-    box-shadow: rgba(252, 199, 41, 0.2) 0 -25px 18px -14px inset,
-        rgba(252, 199, 41, 0.15) 0 1px 2px, rgba(252, 199, 41, 0.15) 0 2px 4px,
-        rgba(252, 199, 41, 0.15) 0 4px 8px, rgba(252, 199, 41, 0.15) 0 8px 16px,
-        rgba(252, 199, 41, 0.15) 0 16px 32px;
-    color: #fff;
-    cursor: pointer;
-    display: inline-block;
-    font-family: "Montserrat", sans-serif;
-    padding: 7px 20px;
-    text-align: center;
-    text-decoration: none;
+.btn a:hover {
+    transform: scale(1.25);
     transition: all 250ms;
-    border: 0;
-    font-size: 14px;
-    user-select: none;
-    -webkit-user-select: none;
-    touch-action: manipulation;
-}
-
-.main-btn:hover {
-    box-shadow: rgba(252, 199, 41, 0.35) 0 -25px 18px -14px inset,
-        rgba(252, 199, 41, 0.25) 0 1px 2px, rgba(252, 199, 41, 0.25) 0 2px 4px,
-        rgba(252, 199, 41, 0.25) 0 4px 8px, rgba(252, 199, 41, 0.25) 0 8px 16px,
-        rgba(252, 199, 41, 0.25) 0 16px 32px;
-    transform: scale(1.05) rotate(-1deg);
 }

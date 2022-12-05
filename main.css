@@ -139,7 +139,10 @@ li {
     min-height: 467px;
 }
 
-.container {
+.container-a,
+.container-b,
+.container-c,
+.container-d {
     display: flex;
     flex-direction: column;
     background-color: #393f47;
@@ -151,7 +154,10 @@ li {
     cursor: pointer;
 }
 
-.container:hover {
+.container-a:hover,
+.container-b:hover,
+.container-c:hover,
+.container-d:hover {
     background-color: #c8a35f;
     transition: ease-out 250ms;
 }
