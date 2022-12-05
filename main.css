@@ -1,0 +1,212 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+:root {
+    --dark: #2f343a;
+    --gold: #c8a35f;
+}
+a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+    cursor: pointer;
+}
+h1 {
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 64px;
+    font-weight: bold;
+    letter-spacing: 5px;
+    color: #fff;
+    text-align: center;
+}
+h2 {
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 40px;
+    font-weight: bold;
+    color: #fff;
+    text-align: left;
+    line-height: 123.05%;
+}
+
+p {
+    display: inline-block;
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    color: #fff;
+    text-align: center;
+    line-height: 158.2%;
+}
+body {
+    background-color: var(--dark);
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+}
+/* nav */
+.nav {
+    display: flex;
+    height: 100px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10%;
+}
+.nav-btns {
+    gap: 30px;
+}
+ul li {
+    list-style: none;
+    display: inline-block;
+}
+li {
+    padding-left: 30px;
+}
+
+/* main */
+
+.main__text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 15% 12%;
+    border: 2px solid #c8a35f;
+}
+
+/* scnd screen */
+
+.scnd-screen {
+    display: flex;
+    flex-direction: row;
+    margin: 0 10%;
+    min-height: 560px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.scnd-left {
+    max-width: 50%;
+}
+
+.form-btn {
+    background-color: #c8a35f;
+    border-radius: 10px;
+    box-shadow: rgba(252, 199, 41, 0.2) 0 -25px 18px -14px inset,
+        rgba(252, 199, 41, 0.15) 0 1px 2px, rgba(252, 199, 41, 0.15) 0 2px 4px,
+        rgba(252, 199, 41, 0.15) 0 4px 8px, rgba(252, 199, 41, 0.15) 0 8px 16px,
+        rgba(252, 199, 41, 0.15) 0 16px 32px;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-family: "Poppins", sans-serif;
+    padding: 7px 20px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 250ms;
+    border: 0;
+    font-size: 14px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.form-btn:hover {
+    box-shadow: rgba(252, 199, 41, 0.35) 0 -25px 18px -14px inset,
+        rgba(252, 199, 41, 0.25) 0 1px 2px, rgba(252, 199, 41, 0.25) 0 2px 4px,
+        rgba(252, 199, 41, 0.25) 0 4px 8px, rgba(252, 199, 41, 0.25) 0 8px 16px,
+        rgba(252, 199, 41, 0.25) 0 16px 32px;
+    transform: scale(1.05) rotate(-1deg);
+}
+
+/* third screen */
+
+.thrd-screen {
+    display: flex;
+    flex-direction: column;
+    padding: 0 10%;
+    min-height: 467px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    background-color: #393f47;
+    width: 272px;
+    height: 170px;
+    border: 2px solid #2f343a;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.container:hover {
+    background-color: #c8a35f;
+    transition: ease-out 250ms;
+}
+.services {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.services a {
+    text-transform: uppercase;
+    font-size: 18px;
+    padding-top: 30px;
+}
+
+/* fourth screen*/
+
+.frth-screen {
+    display: flex;
+    padding: 0 10%;
+    min-height: 488px;
+    justify-content: space-between;
+}
+
+.about-left {
+    max-width: 40%;
+}
+
+.block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 160px;
+    background-color: #fff;
+    cursor: pointer;
+}
+.block:hover {
+    box-shadow: rgba(252, 199, 41, 0.35) 0 -25px 18px -14px inset,
+        rgba(252, 199, 41, 0.25) 0 1px 2px, rgba(252, 199, 41, 0.25) 0 2px 4px,
+        rgba(252, 199, 41, 0.25) 0 4px 8px, rgba(252, 199, 41, 0.25) 0 8px 16px,
+        rgba(252, 199, 41, 0.25) 0 16px 32px;
+    transform: scale(1.05) rotate(-1deg);
+    transition: all 250ms;
+}
+.block p {
+    color: var(--dark);
+}
+
+.block h1 {
+    color: var(--dark);
+    letter-spacing: 0;
+}
+.about-right {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
