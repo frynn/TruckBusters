@@ -19,43 +19,36 @@
             <li><a href="#contacts">КОНТАКТЫ</a></li>
         </ul>
     </div>
-    <div class="menu-btn">
-        <img src="./media/menu.svg">
+    <div class="nav-burger">
+        <img alt="burger menu" src="media/menu-icon.svg" style="width: 100%; height: 100%; object-fit: contain"/>
     </div>
 </nav>
-<section>
-    <div style="display: flex; padding: 0 10%; width: 100%; height: 620px; background-image: url(./media/MainImage.png); background-position: center; overflow: hidden;"
-    >
-        <div class="main__text">
-            <div>
-                <h1>грузовые перевозки</h1>
-            </div>
-            <div>
-                <p>
-                    Перевозка крупногабаритных грузов по России и
-                    Европе. Полное экспедирование, страхование, упаковка
-                    и хранение грузов
-                </p>
-            </div>
+<section style="padding: 0;">
+    <div class="main_text_bg">
+        <div class="main_text">
+            <h1>грузовые перевозки</h1>
+            <p>
+                Перевозка крупногабаритных грузов по России и
+                Европе. Полное экспедирование, страхование, упаковка
+                и хранение грузов
+            </p>
         </div>
     </div>
 </section>
-<section>
+<section style="padding: 3rem 0;">
     <div class="scnd-screen">
         <div class="scnd-left">
-            <div><h2>грузоперевозки<br/>по европе</h2></div>
-            <div style="margin: 30px 0 50px 0;">
-                <p style="text-align: left;">
-                    Страны Евросоюза, а также Украина, со всеми
-                    документами.
-                </p>
-            </div>
-            <div><a href="./form.html">
+            <h2>грузоперевозки<br/>по европе</h2>
+            <p style="text-align: left; margin: 5px 0 30px 0;">
+                Страны Евросоюза, а также Украина, со всеми
+                документами.
+            </p>
+            <a href="./form.html">
                 <button class="form-btn" role="button">ОСТАВИТЬ ЗАЯВКУ</button>
             </a></div>
         </div>
         <div style="display: flex; align-items: center; justify-content: center; height: 75%">
-            <img class="daf-truck" src="./media/daf-truck.png" alt="truck-img"/>
+            <img src="./media/daf-truck.png" alt="truck-img" class="truck-img"/>
         </div>
     </div>
 </section>
@@ -169,19 +162,19 @@
             width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"></iframe>
 </section>
-<footer style="background-color: var(--gold); height: 160px;">
-    <div style="display: flex; margin: 0 10%; align-items: center; justify-content: space-between; height: 100%;">
-        <img alt="logo" src="./media/logo-footer.svg">
-        <div style="display: flex; flex-direction: column;">
-            <p class="footer-p">123456, г.Гродно, ул. Советсткая 14</p>
-            <p class="footer-p">truckbusters@gmail.com</p>
-        </div>
-        <div style="display: flex; flex-direction: column;">
-            <a id="contacts"><p class="footer-p">+375(33)220-11-22</p></a>
-            <p class="footer-p">+375(25)220-11-22</p>
-        </div>
+<footer>
+    <img alt="logo" src="./media/logo-footer.svg">
+    <div style="display: flex; flex-direction: column;">
+        <p>123456, г.Гродно, ул. Советская 14</p>
+        <p>truckbusters@gmail.com</p>
+    </div>
+    <div style="display: flex; flex-direction: column;">
+        <a id="contacts"><p>+375(33)220-11-22</p></a>
+        <p>+375(25)220-11-22</p>
     </div>
 </footer>
+
+<!-- Modals script -->
 <script defer src="./script.js"></script>
 </body>
 </html>
