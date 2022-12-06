@@ -1,190 +1,344 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-    <meta charset="UTF-8"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <link rel="stylesheet" href="./main.css"/>
-    <title>TRUCKBUSTERS</title>
-</head>
-<body>
-<nav class="nav">
-    <div class="logo">
-        <a href="./index.html"><strong>TRUCKBUSTERS</strong>Company</a>
-    </div>
-    <div class="nav-btns">
-        <ul>
-            <li><a href="#services">УСЛУГИ</a></li>
-            <li><a href="#about-us">О КОМПАНИИ</a></li>
-            <li><a href="#contacts">КОНТАКТЫ</a></li>
-        </ul>
-    </div>
-    <div class="nav-burger" id="burger_button">
-        <img alt="burger menu" src="media/menu-icon.svg"
-             style="width: 100%; height: 100%; object-fit: contain; pointer-events: none; user-select: none;"/>
-    </div>
-
-    <!-- mobile-only fullscreen menu -->
-    <div class="menu_mobile hidden" id="menu_mobile">
-        <ul style="display: flex; flex-direction: column; gap: 12px;" id="mobile_menu_links">
-            <li style="padding: 0"><a style="font-size: 1.75rem; font-weight: bold" href="#services">УСЛУГИ</a></li>
-            <li style="padding: 0"><a style="font-size: 1.75rem; font-weight: bold" href="#about-us">О КОМПАНИИ</a></li>
-            <li style="padding: 0"><a style="font-size: 1.75rem; font-weight: bold" href="#contacts">КОНТАКТЫ</a></li>
-        </ul>
-    </div>
-</nav>
-<section style="padding: 0;">
-    <div class="main_text_bg">
-        <div class="main_text">
-            <h1>грузовые перевозки</h1>
-            <p>
-                Перевозка крупногабаритных грузов по России и
-                Европе. Полное экспедирование, страхование, упаковка
-                и хранение грузов
-            </p>
-        </div>
-    </div>
-</section>
-<section style="padding: 3rem 0;">
-    <div class="scnd-screen">
-        <div class="scnd-left">
-            <h2>грузоперевозки<br/>по европе</h2>
-            <p style="text-align: left; margin: 5px 0 30px 0;">
-                Страны Евросоюза, а также Украина, со всеми
-                документами.
-            </p>
-            <a href="./form.html">
-                <button class="form-btn" role="button">ОСТАВИТЬ ЗАЯВКУ</button>
-            </a>
-        </div>
-        <div style="display: flex; align-items: center; justify-content: center; height: 75%">
-            <img src="./media/daf-truck.png" alt="truck-img" class="truck-img"/>
-        </div>
-    </div>
-</section>
-<section>
-    <div class="thrd-screen">
-        <div style="text-align: center">
-            <a id="services"></a>
-            <h2>услуги</h2>
-        </div>
-        <div class="services" id="services_modals">
-            <div class="service_container" data-modal-id="flight">
-                <img alt="service picture" src="./media/airplane-flight.svg"/>
-                <p>авиауслуги</p>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./main.css" />
+        <title>TRUCKBUSTERS</title>
+    </head>
+    <body>
+        <nav class="nav">
+            <div class="logo">
+                <a href="./index.html"><strong>TRUCKBUSTERS</strong>Company</a>
             </div>
-            <div class="service_container" data-modal-id="local_shipping">
-                <img alt="service picture" src="./media/local_shipping.svg"/>
-                <p>грузоперевозки</p>
+            <div class="nav-btns">
+                <ul>
+                    <li><a href="#services">УСЛУГИ</a></li>
+                    <li><a href="#about-us">О КОМПАНИИ</a></li>
+                    <li><a href="#contacts">КОНТАКТЫ</a></li>
+                </ul>
             </div>
-            <div class="service_container" data-modal-id="boat">
-                <img alt="service picture" src="./media/boat.svg"/>
-                <p>на пароме</p>
+            <div class="nav-burger" id="burger_button">
+                <img
+                    alt="burger menu"
+                    src="media/menu-icon.svg"
+                    style="
+                        width: 100%;
+                        height: 100%;
+                        object-fit: contain;
+                        pointer-events: none;
+                        user-select: none;
+                    "
+                />
             </div>
-            <div class="service_container" data-modal-id="car">
-                <img alt="service picture" src="./media/cityCar.svg"/>
-                <p>по городу</p>
+
+            <!-- mobile-only fullscreen menu -->
+            <div class="menu_mobile hidden" id="menu_mobile">
+                <ul
+                    style="display: flex; flex-direction: column; gap: 12px"
+                    id="mobile_menu_links"
+                >
+                    <li style="padding: 0">
+                        <a
+                            style="font-size: 1.75rem; font-weight: bold"
+                            href="#services"
+                            >УСЛУГИ</a
+                        >
+                    </li>
+                    <li style="padding: 0">
+                        <a
+                            style="font-size: 1.75rem; font-weight: bold"
+                            href="#about-us"
+                            >О КОМПАНИИ</a
+                        >
+                    </li>
+                    <li style="padding: 0">
+                        <a
+                            style="font-size: 1.75rem; font-weight: bold"
+                            href="#contacts"
+                            >КОНТАКТЫ</a
+                        >
+                    </li>
+                </ul>
             </div>
-        </div>
-    </div>
-    <dialog id="flight">
-        <div class="modal_container">
-            <h2 style="text-align: center">Авиаперевозки от TruckBusters</h2>
-            <p>
-                Выгодно, быстро и надежно - это про авиаперевозки от TruckBusters!
-                <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis dolore expedita facere illo iure maxime ratione! Consectetur, dolorum, reiciendis! Ea in libero odit quas sunt? Incidunt laborum porro temporibus voluptatem?</span><span>Amet atque consequuntur cum deserunt eaque esse eveniet exercitationem harum laboriosam laborum minima molestiae nobis nulla odit officia quae quasi quo quos rerum sapiente soluta, sunt tenetur totam velit voluptas.</span>
-            </p>
-
-            <button class="modal_close">Закрыть</button>
-        </div>
-    </dialog>
-    <dialog id="local_shipping">
-        <div class="modal_container">
-            <h2 style="text-align: center">Грузоперевозки от TruckBusters</h2>
-            <p>
-                Выгодно, быстро и надежно - это про авиаперевозки от TruckBusters!
-                <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis dolore expedita facere illo iure maxime ratione! Consectetur, dolorum, reiciendis! Ea in libero odit quas sunt? Incidunt laborum porro temporibus voluptatem?</span><span>Amet atque consequuntur cum deserunt eaque esse eveniet exercitationem harum laboriosam laborum minima molestiae nobis nulla odit officia quae quasi quo quos rerum sapiente soluta, sunt tenetur totam velit voluptas.</span>
-            </p>
-
-            <button class="modal_close">Закрыть</button>
-        </div>
-    </dialog>
-    <dialog id="boat">
-        <div class="modal_container">
-            <h2 style="text-align: center">Перевозки на пароме от TruckBusters</h2>
-            <p>
-                Выгодно, быстро и надежно - это про авиаперевозки от TruckBusters!
-                <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis dolore expedita facere illo iure maxime ratione! Consectetur, dolorum, reiciendis! Ea in libero odit quas sunt? Incidunt laborum porro temporibus voluptatem?</span><span>Amet atque consequuntur cum deserunt eaque esse eveniet exercitationem harum laboriosam laborum minima molestiae nobis nulla odit officia quae quasi quo quos rerum sapiente soluta, sunt tenetur totam velit voluptas.</span>
-            </p>
-
-            <button class="modal_close">Закрыть</button>
-        </div>
-    </dialog>
-    <dialog id="car">
-        <div class="modal_container">
-            <h2 style="text-align: center">Городские перевозки от TruckBusters</h2>
-            <p>
-                Выгодно, быстро и надежно - это про авиаперевозки от TruckBusters!
-                <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis dolore expedita facere illo iure maxime ratione! Consectetur, dolorum, reiciendis! Ea in libero odit quas sunt? Incidunt laborum porro temporibus voluptatem?</span><span>Amet atque consequuntur cum deserunt eaque esse eveniet exercitationem harum laboriosam laborum minima molestiae nobis nulla odit officia quae quasi quo quos rerum sapiente soluta, sunt tenetur totam velit voluptas.</span>
-            </p>
-
-            <button class="modal_close">Закрыть</button>
-        </div>
-    </dialog>
-</section>
-<section>
-    <div class="frth-screen">
-        <div>
-            <a id='about-us'><h2>О КОМПАНИИ</h2></a>
-        </div>
-        <div style="display: flex; align-items: center; justify-content: space-evenly;">
-            <div class="about-left">
-                <p style="text-align: left; padding: 50px 0; line-height: 146.5%;">Lorem Ipsum - это текст-"рыба", часто
-                    используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на
-                    латинице с
-                    начала XVI века.
-                    В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя
-                    Lorem
-                    Ipsum для распечатки образцов.
-                    Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в
-                    электронный
-                    дизайн.</p>
-            </div>
-            <div class="about-right">
-                <div class="block">
-                    <h1>48</h1>
-                    <p>офисов<br/> в Европе и СНГ</p>
-                </div>
-                <div class="block">
-                    <h1>361</h1>
-                    <p>грузовиков<br/>Volvo, Scania</p>
-                </div>
-                <div class="block">
-                    <h1>1500</h1>
-                    <p>сотрудников<br/> профессионалов</p>
+        </nav>
+        <section style="padding: 0">
+            <div class="main_text_bg">
+                <div class="main_text">
+                    <h1>грузовые перевозки</h1>
+                    <p>
+                        Перевозка крупногабаритных грузов по России и Европе.
+                        Полное экспедирование, страхование, упаковка и хранение
+                        грузов
+                    </p>
                 </div>
             </div>
-        </div>
-    </div>
-</section>
-<section style="padding: 0; height: 550px">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d835.4663209471872!2d23.83007206125429!3d53.6816344120305!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dfd625d04e0f91%3A0x3d5e65a04c38e688!2z0KHQvtCy0LXRgtGB0LrQsNGPINGD0LsuIDE0LCDQk9GA0L7QtNC90L4!5e0!3m2!1sru!2sby!4v1670261674907!5m2!1sru!2sby"
-            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
-</section>
-<footer>
-    <img alt="logo" src="./media/logo-footer.svg">
-    <div style="display: flex; flex-direction: column;">
-        <p>123456, г.Гродно, ул. Советская 14</p>
-        <p>truckbusters@gmail.com</p>
-    </div>
-    <div style="display: flex; flex-direction: column;">
-        <a id="contacts"><p>+375(33)220-11-22</p></a>
-        <p>+375(25)220-11-22</p>
-    </div>
-</footer>
+        </section>
+        <section style="padding: 3rem 0">
+            <div class="scnd-screen">
+                <div class="scnd-left">
+                    <h2>грузоперевозки<br />по европе</h2>
+                    <p style="text-align: left; margin: 5px 0 30px 0">
+                        Страны Евросоюза, а также Украина, со всеми документами.
+                    </p>
+                    <a href="./form.html">
+                        <button class="form-btn" role="button">
+                            ОСТАВИТЬ ЗАЯВКУ
+                        </button>
+                    </a>
+                </div>
+                <div
+                    style="
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        height: 75%;
+                    "
+                >
+                    <img
+                        src="./media/daf-truck.png"
+                        alt="truck-img"
+                        class="truck-img"
+                    />
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="thrd-screen">
+                <div style="text-align: center">
+                    <a id="services"></a>
+                    <h2>услуги</h2>
+                </div>
+                <div class="services" id="services_modals">
+                    <div class="service_container" data-modal-id="flight">
+                        <img
+                            alt="service picture"
+                            src="./media/airplane-flight.svg"
+                        />
+                        <p>авиауслуги</p>
+                    </div>
+                    <div
+                        class="service_container"
+                        data-modal-id="local_shipping"
+                    >
+                        <img
+                            alt="service picture"
+                            src="./media/local_shipping.svg"
+                        />
+                        <p>грузоперевозки</p>
+                    </div>
+                    <div class="service_container" data-modal-id="boat">
+                        <img alt="service picture" src="./media/boat.svg" />
+                        <p>на пароме</p>
+                    </div>
+                    <div class="service_container" data-modal-id="car">
+                        <img alt="service picture" src="./media/cityCar.svg" />
+                        <p>по городу</p>
+                    </div>
+                </div>
+            </div>
+            <dialog id="flight">
+                <div class="modal_container">
+                    <h2 style="text-align: center">
+                        Авиаперевозки от TruckBusters
+                    </h2>
+                    <p>
+                        Выгодно, быстро и надежно - это про авиаперевозки от
+                        TruckBusters!
+                        <span
+                            >Агентские соглашения с авиакомпаниями BELAVIA, LOT
+                            Polish Airlines, Lufthansa Cargo, Turkish Airlines,
+                            Etihad Airways, AirBaltic, Czech Airlines = доставка
+                            груза из любой точки мира в любую точку мира по
+                            специальным тарифам <br />
+                            Деловые контакты с крупнейшими
+                            транспортно-экспедиционными компаниями = доставка
+                            «до двери» <br />
+                            Расположение офиса в НАП «Минск-2» и наличие в штате
+                            сотрудников по таможенному оформлению =
+                            оперативность </span
+                        ><span
+                            >Собственный автопарк и регистрация в реестре
+                            таможенных перевозчиков = удобство доставки грузов в
+                            аэропорт <br />
+                            Страхование груза по приемлемым тарифным ставкам
+                            <br />
+                            Сертификат ИАТА на перевозку опасных грузов</span
+                        >
+                    </p>
 
-<!-- Modals script -->
-<script defer src="./script.js"></script>
-</body>
+                    <button class="modal_close">Закрыть</button>
+                </div>
+            </dialog>
+            <dialog id="local_shipping">
+                <div class="modal_container">
+                    <h2 style="text-align: center">
+                        Грузоперевозки от TruckBusters
+                    </h2>
+                    <p>
+                        Выгодно, быстро и надежно - это про грузоперевозки от
+                        TruckBusters!
+                        <span
+                            >Грузоперевозки по Беларуси в целом и грузоперевозки
+                            в Минске в частности - вот только незначительная
+                            часть оказываемых нашей компанией услуг. </span
+                        ><span
+                            >Большой парк грузовых автомобилей различной
+                            грузоподъемности; <br />
+                            Богатый опыт работы с партнерами из Беларуси,
+                            России, СНГ и Европы;<br />
+                            Одни из самых лучших цен и условий сотрудничества на
+                            рынке: у нас - от 19 рублей за час. <br />
+                            Качество, оптимизированность и оперативность
+                            национальных и международных перевозок.</span
+                        >
+                    </p>
+
+                    <button class="modal_close">Закрыть</button>
+                </div>
+            </dialog>
+            <dialog id="boat">
+                <div class="modal_container">
+                    <h2 style="text-align: center">
+                        Перевозки на пароме от TruckBusters
+                    </h2>
+                    <p>
+                        Выгодно, быстро и надежно - это про грузоперевозки от
+                        TruckBusters!
+                        <span
+                            >Грузоперевозки морским транспортом характеризуются
+                            стабильно высоким спросом благодаря большому обороту
+                            грузов и простоте организации процесса. Среди
+                            преимуществ такого вида перевозок – внушительная
+                            грузоподъемность кораблей, низкая себестоимость,
+                            небольшое ограничение пропускной способности. Кроме
+                            того, суда транспортируют товары различных типов. </span
+                        ><span
+                            ><br />Так, для перевозки наливных грузов
+                            предназначены танкеры, контейнеры транспортируются
+                            контейнеровозами, а автомобили доставляются
+                            трейлерными суднами (ролкерами). Морской транспорт
+                            быстро преодолевает значительные расстояния
+                            (например, доставляет товары в страны Европы, СНГ,
+                            Балкан, Прибалтики, Средней Азии).</span
+                        >
+                    </p>
+
+                    <button class="modal_close">Закрыть</button>
+                </div>
+            </dialog>
+            <dialog id="car">
+                <div class="modal_container">
+                    <h2 style="text-align: center">
+                        Городские перевозки от TruckBusters
+                    </h2>
+                    <p>
+                        Выгодно, быстро и надежно - это про грузоперевозки от
+                        TruckBusters!
+                        <span
+                            >Если Вам необходимо организовать перевозку грузов
+                            из Гродно, достаточно обратиться в TruckBusters
+                            Company в г. Гродно. Опытные специалисты в короткий
+                            срок рассчитают возможную стоимость услуги. Далее
+                            после заполнения предварительной заявки и
+                            согласования маршрута Вам остается лишь дожидаться
+                            уведомления о доставке в пункт назначения и
+                            отслеживать груз в пути (для этого вся используемая
+                            компанией техника оборудована высокоточными
+                            средствами навигации). </span
+                        ><span
+                            ><br />По желанию клиента оплата грузоперевозок
+                            безналичным способом может осуществляться как по
+                            факту доставки, так и по предоплате. При
+                            необходимости наши специалисты возьмутся за
+                            организацию перевозок негабаритных или опасных
+                            грузов, а также предложат вам ряд дополнительных
+                            услуг.</span
+                        >
+                    </p>
+
+                    <button class="modal_close">Закрыть</button>
+                </div>
+            </dialog>
+        </section>
+        <section>
+            <div class="frth-screen">
+                <div>
+                    <a id="about-us"><h2>О КОМПАНИИ</h2></a>
+                </div>
+                <div
+                    style="
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-evenly;
+                    "
+                >
+                    <div class="about-left">
+                        <p
+                            style="
+                                text-align: left;
+                                padding: 50px 0;
+                                line-height: 146.5%;
+                            "
+                        >
+                            TruckBusters - это серьезная фирма, главная цель
+                            которой заключается в предоставлении своим клиентам
+                            максимально удобного и качественного сервиса за
+                            минимальные деньги. <br />
+                            Штат сотрудников компании состоит исключительно из
+                            опытных специалистов, которые умеют грамотно
+                            спланировать и выполнить полученный заказ с
+                            индивидуальным подходом к каждому клиенту.
+                        </p>
+                    </div>
+                    <div class="about-right">
+                        <div class="block">
+                            <h1>48</h1>
+                            <p>
+                                офисов<br />
+                                в Европе и СНГ
+                            </p>
+                        </div>
+                        <div class="block">
+                            <h1>361</h1>
+                            <p>грузовиков<br />Volvo, Scania</p>
+                        </div>
+                        <div class="block">
+                            <h1>1500</h1>
+                            <p>
+                                сотрудников<br />
+                                профессионалов
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section style="padding: 0; height: 550px">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d835.4663209471872!2d23.83007206125429!3d53.6816344120305!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dfd625d04e0f91%3A0x3d5e65a04c38e688!2z0KHQvtCy0LXRgtGB0LrQsNGPINGD0LsuIDE0LCDQk9GA0L7QtNC90L4!5e0!3m2!1sru!2sby!4v1670261674907!5m2!1sru!2sby"
+                width="100%"
+                height="100%"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+        </section>
+        <footer>
+            <img alt="logo" src="./media/logo-footer.svg" />
+            <div style="display: flex; flex-direction: column">
+                <p>123456, г.Гродно, ул. Советская 14</p>
+                <p>truckbusters@gmail.com</p>
+            </div>
+            <div style="display: flex; flex-direction: column">
+                <a id="contacts"><p>+375(33)220-11-22</p></a>
+                <p>+375(25)220-11-22</p>
+            </div>
+        </footer>
+
+        <!-- Modals script -->
+        <script defer src="./script.js"></script>
+    </body>
 </html>
