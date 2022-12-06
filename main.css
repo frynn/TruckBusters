@@ -137,6 +137,7 @@ li {
     flex-direction: column;
     padding: 0 10%;
     min-height: 467px;
+    justify-content: space-evenly;
 }
 
 .container-a,
@@ -180,9 +181,10 @@ li {
 
 .frth-screen {
     display: flex;
+    flex-direction: column;
     padding: 0 10%;
     min-height: 488px;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
 }
 
