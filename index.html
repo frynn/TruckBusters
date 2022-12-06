@@ -19,8 +19,18 @@
             <li><a href="#contacts">КОНТАКТЫ</a></li>
         </ul>
     </div>
-    <div class="nav-burger">
-        <img alt="burger menu" src="media/menu-icon.svg" style="width: 100%; height: 100%; object-fit: contain"/>
+    <div class="nav-burger" id="burger_button">
+        <img alt="burger menu" src="media/menu-icon.svg"
+             style="width: 100%; height: 100%; object-fit: contain; pointer-events: none; user-select: none;"/>
+    </div>
+
+    <!-- mobile-only fullscreen menu -->
+    <div class="menu_mobile hidden" id="menu_mobile">
+        <ul style="display: flex; flex-direction: column; gap: 12px;" id="mobile_menu_links">
+            <li style="padding: 0"><a style="font-size: 1.75rem; font-weight: bold" href="#services">УСЛУГИ</a></li>
+            <li style="padding: 0"><a style="font-size: 1.75rem; font-weight: bold" href="#about-us">О КОМПАНИИ</a></li>
+            <li style="padding: 0"><a style="font-size: 1.75rem; font-weight: bold" href="#contacts">КОНТАКТЫ</a></li>
+        </ul>
     </div>
 </nav>
 <section style="padding: 0;">

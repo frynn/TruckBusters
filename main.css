@@ -91,6 +91,10 @@ footer {
     justify-content: space-between;
     align-items: center;
     padding: 0 10%;
+    position: sticky;
+    top: 0;
+    background: var(--dark);
+    box-shadow: 30px 30px 59px #343434, -30px -30px 59px #464646;
 }
 
 .nav-btns {
@@ -101,6 +105,8 @@ footer {
     display: none;
     width: 35px;
     height: 35px;
+    z-index: 55;
+    cursor: pointer;
 }
 
 ul li {
@@ -367,6 +373,22 @@ li {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+}
+
+.menu_mobile {
+    position: fixed;
+    inset: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 50;
+    background: rgba(9, 9, 9, 0.75);
+}
+
+.menu_mobile.hidden {
+    display: none;
 }
 
 @media screen and (max-width: 768px) {
