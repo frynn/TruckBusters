@@ -1,0 +1,24 @@
+dialog {
+    background: var(--dark);
+    margin: auto;
+    border: 1px solid #161616;
+    border-radius: 0.625rem;
+    box-shadow: 3px 3px 29px -5px rgba(0, 0, 0, 0.55);
+    padding: 1rem;
+}
+
+dialog::backdrop {
+    background: rgba(9, 9, 9, 0.55);
+}
+
+.modal_close {
+    width: fit-content;
+    padding: 0.5rem 2rem;
+}
+
+.modal_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.675rem;
+}

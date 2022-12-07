@@ -4,7 +4,18 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="./main.css" />
+        <link rel="stylesheet" href="css/base.css" />
+        <link rel="stylesheet" href="css/nav.css" />
+        <link rel="stylesheet" href="css/menu.icon.css" />
+        <link rel="stylesheet" href="css/menu.css" />
+        <link rel="stylesheet" href="css/modals.css" />
+        <link rel="stylesheet" href="css/first.screen.css" />
+        <link rel="stylesheet" href="css/second.screen.css" />
+        <link rel="stylesheet" href="css/third.screen.css" />
+        <link rel="stylesheet" href="css/fourth.screen.css" />
+        <!-- Responsive CSS sheets -->
+        <link rel="stylesheet" href="css/responsive/768px_main.css" />
+        <link rel="stylesheet" href="css/responsive/400px_main.css" />
         <title>TRUCKBUSTERS</title>
     </head>
     <body>
@@ -12,26 +23,21 @@
             <div class="logo">
                 <a href="./index.html"><strong>TRUCKBUSTERS</strong>Company</a>
             </div>
-            <div class="nav-btns">
+            <div class="nav-buttons">
                 <ul>
                     <li><a href="#services">УСЛУГИ</a></li>
                     <li><a href="#about-us">О КОМПАНИИ</a></li>
                     <li><a href="#contacts">КОНТАКТЫ</a></li>
                 </ul>
             </div>
-            <div class="nav-burger" id="burger_button">
-                <img
-                    alt="burger menu"
-                    src="media/menu-icon.svg"
-                    style="
-                        width: 100%;
-                        height: 100%;
-                        object-fit: contain;
-                        pointer-events: none;
-                        user-select: none;
-                    "
-                />
-            </div>
+
+            <label class="menu-icon" for="menu_toggle">
+                <input class="menu-icon-checkbox" type="checkbox" id="menu_toggle" />
+                <div>
+                    <span></span>
+                    <span></span>
+                </div>
+            </label>
 
             <!-- mobile-only fullscreen menu -->
             <div class="menu_mobile hidden" id="menu_mobile">
@@ -76,13 +82,13 @@
             </div>
         </section>
         <section style="padding: 3rem 0">
-            <div class="scnd-screen">
-                <div class="scnd-left">
+            <div class="second-screen">
+                <div class="second-left">
                     <h2>грузоперевозки<br />по европе</h2>
                     <p style="text-align: left; margin: 5px 0 30px 0">
                         Страны Евросоюза, а также Украина, со всеми документами.
                     </p>
-                    <a href="./form.html">
+                    <a href="contact">
                         <button class="form-btn" role="button">
                             ОСТАВИТЬ ЗАЯВКУ
                         </button>
@@ -105,7 +111,7 @@
             </div>
         </section>
         <section>
-            <div class="thrd-screen">
+            <div class="third-screen">
                 <div style="text-align: center">
                     <a id="services"></a>
                     <h2>услуги</h2>
@@ -263,7 +269,7 @@
             </dialog>
         </section>
         <section>
-            <div class="frth-screen">
+            <div class="fourth-screen">
                 <div>
                     <a id="about-us"><h2>О КОМПАНИИ</h2></a>
                 </div>
@@ -339,6 +345,7 @@
         </footer>
 
         <!-- Modals script -->
-        <script defer src="./script.js"></script>
+        <script defer src="scripts/menu.script.js"></script>
+        <script defer src="scripts/modals.script.js"></script>
     </body>
 </html>

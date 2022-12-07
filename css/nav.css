@@ -1,0 +1,23 @@
+/* nav */
+.nav {
+    display: flex;
+    height: 100px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10%;
+    position: sticky;
+    top: 0;
+    background: var(--dark);
+    box-shadow: 30px 30px 59px #343434, -30px -30px 59px #464646;
+}
+
+.nav-buttons {
+    gap: 30px;
+}
+
+/* misc */
+.truck-img {
+    aspect-ratio: 508/589;
+    height: 320px;
+    object-fit: contain;
+}

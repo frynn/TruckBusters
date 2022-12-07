@@ -1,0 +1,26 @@
+@media screen and (max-width: 400px) {
+    .nav {
+        padding: 0 4%;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 1.25rem;
+    }
+
+    p {
+        font-size: 0.75rem;
+    }
+
+    .block {
+        width: 130px;
+        height: 105px;
+    }
+
+    .main_text {
+        word-break: break-word;
+    }
+}
