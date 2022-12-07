@@ -1,0 +1,23 @@
+.main_text_bg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-block: 0;
+    padding-inline: 10%;
+    width: 100%;
+    height: 620px;
+    background-image: url(../media/MainImage.png);
+    background-position: center;
+    overflow: hidden;
+}
+
+.main_text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 15% 12%;
+    border: 2px solid #c8a35f;
+    padding: 2rem 1rem;
+    height: fit-content;
+}

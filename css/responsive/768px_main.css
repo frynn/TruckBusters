@@ -1,0 +1,66 @@
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 3rem;
+    }
+
+    h2 {
+        font-size: 1.75rem;
+    }
+
+    p {
+        font-size: 0.875rem;
+    }
+
+    footer {
+        padding-inline: 6%;
+        flex-direction: column;
+        gap: 0.75rem;
+    }
+
+    .nav {
+        padding: 0 6%;
+    }
+
+    .nav-buttons {
+        display: none;
+    }
+
+    .menu-icon {
+        display: inherit;
+    }
+
+    .main_text {
+        margin: 0;
+    }
+
+    .main_text_bg {
+        padding-inline: 6%;
+    }
+
+    .truck-img {
+        height: 240px;
+    }
+
+    .block {
+        width: 160px;
+        height: 140px;
+    }
+
+    .about-right {
+        width: min-content;
+    }
+
+    .about-left {
+        max-width: 60%;
+    }
+
+    .second-screen {
+        flex-direction: column;
+        min-height: 0;
+        gap: 48px;
+    }
+
+    .second-left {
+        max-width: 95%;
+    }
+}
